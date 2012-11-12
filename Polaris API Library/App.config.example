@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <!-- The following keys are required in the config file of the base project using the library -->
+    <add key="PAPIKey" value="Your Polaris API Key" />
+    <add key="PAPIUser" value="Your Polaris API User" />
+    <add key="PAPIHashHostName" value="https://polprodpac.clcdpc.org/PAPIService/REST/" />
+    <add key="PAPIRequestHostName" value="https://catalog.clcohio.org/PAPIService/REST/" />
+    <!-- the active directory username and password to be used to make protected method calls -->
+    <add key="staff_username" value="username" />
+    <add key="staff_password" value="password" />
+    <add key="staff_domain" value="domain" />
+  </appSettings>
+</configuration>

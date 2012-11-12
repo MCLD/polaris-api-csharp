@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78E83504-5DBE-4ECA-A04D-F8911E436164}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clc.Polaris.Api</RootNamespace>
+    <AssemblyName>Polaris API Library</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Polaris API Library.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp, Version=104.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\API Library Demo\packages\RestSharp.104.1\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authenticators\PolarisOverrideAuthenticator.cs" />
+    <Compile Include="Authenticators\PolarisProtectedAuthenticator.cs" />
+    <Compile Include="Authenticators\PolarisPublicAuthenticator.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Methods\BibGet.cs" />
+    <Compile Include="Methods\BibSearch.cs" />
+    <Compile Include="Methods\HoldRequestCancel.cs" />
+    <Compile Include="Methods\HoldRequestCancelAllForPatron.cs" />
+    <Compile Include="Methods\HoldRequestReactivate.cs" />
+    <Compile Include="Methods\HoldRequestReactivateAllForPatron.cs" />
+    <Compile Include="Methods\HoldRequestReply.cs" />
+    <Compile Include="Methods\HoldingsGet.cs" />
+    <Compile Include="Methods\HoldRequestCreate.cs" />
+    <Compile Include="Methods\HoldRequestSuspend.cs" />
+    <Compile Include="Methods\HoldRequestSuspendAllForPatron.cs" />
+    <Compile Include="Methods\ItemRenew.cs" />
+    <Compile Include="Methods\ItemRenewAllForPatron.cs" />
+    <Compile Include="Methods\NotificationUpdate.cs" />
+    <Compile Include="Methods\PatronBasicDataGet.cs" />
+    <Compile Include="Methods\PatronHoldRequestsGet.cs" />
+    <Compile Include="Methods\PatronItemsOutGet.cs" />
+    <Compile Include="Methods\PatronValidate.cs" />
+    <Compile Include="Methods\Patron_GetBarcodeFromID.cs" />
+    <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\BibGetResult.cs" />
+    <Compile Include="Model\BibHoldingsGetResult.cs" />
+    <Compile Include="Model\BibSearchOptions.cs" />
+    <Compile Include="Model\BibSearchResult.cs" />
+    <Compile Include="Model\HoldRequestActivationResult.cs" />
+    <Compile Include="Model\HoldRequestCancelAllResult.cs" />
+    <Compile Include="Model\GetBarcodeAndPatronIDResult.cs" />
+    <Compile Include="Model\HoldRequestCancelResult.cs" />
+    <Compile Include="Model\HoldRequestCreateParams.cs" />
+    <Compile Include="Model\HoldRequestReplyData.cs" />
+    <Compile Include="Model\HoldRequestResult.cs" />
+    <Compile Include="Model\HoldStatus.cs" />
+    <Compile Include="Model\PolarisApiResponse.cs" />
+    <Compile Include="Model\ItemsOutActionResult.cs" />
+    <Compile Include="Model\NotificationUpdateParams.cs" />
+    <Compile Include="Model\NotificationUpdateResult.cs" />
+    <Compile Include="Model\PatronBasicDataGetResult.cs" />
+    <Compile Include="Model\PatronHoldRequestsGetResult.cs" />
+    <Compile Include="Model\PatronItemsOutGetResult.cs" />
+    <Compile Include="Model\PatronValidateResult.cs" />
+    <Compile Include="Model\ProtectedToken.cs" />
+    <Compile Include="Model\SearchQualifiers.cs" />
+    <Compile Include="Model\SearchSortOptions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config.example" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

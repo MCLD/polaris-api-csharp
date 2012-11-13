@@ -26,7 +26,7 @@ namespace Clc.Polaris.Api
 		/// Uses patron supplied credentials to suspend a hold request.
 		/// </summary>
 		/// <param name="patronBarcode">The patron's barcode.</param>
-		/// /// <param name="activationDate">The date the hold request will become active.</param>
+		/// <param name="activationDate">The date the hold request will become active.</param>
 		/// <param name="patronPIN">The patron's PIN.</param>
 		/// <returns>An error code and message from the API, if any.</returns>
 		/// <seealso cref="HoldRequestCancelResult"/>

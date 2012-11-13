@@ -10,13 +10,13 @@
 
 #### Required Web.config AppSettings
 
-##### Required API components
+    **Required API components**
 	papi_key - Your Polaris API key
     papi_user - The Polaris API user for your API key
     papi_hash_hostname - The hostname to be used to build the Polaris API hashes
     papi_request_hostname - The hostname to be used to execute the Polaris API requests
 	
-##### Staff account to be used to create protected requests
+    **Staff account to be used to create protected requests**
     staff_username
     staff_password
     staff_domain

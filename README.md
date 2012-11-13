@@ -8,18 +8,19 @@
 	
 ### Sample Usage
 
-#### Required Web.config AppSettings
+#### Sample AppSettings
 
-    **Required API components**
-	papi_key - Your Polaris API key
-    papi_user - The Polaris API user for your API key
-    papi_hash_hostname - The hostname to be used to build the Polaris API hashes
-    papi_request_hostname - The hostname to be used to execute the Polaris API requests
-	
-    **Staff account to be used to create protected requests**
-    staff_username
-    staff_password
-    staff_domain
+      <appSettings>
+		<!-- The following keys are required in the config file of the base project using the library -->
+		<add key="papi_key" value="Your Polaris API Key" />
+		<add key="papi_user" value="Your Polaris API User" />
+		<add key="papi_hash_hostname" value="https://polprodpac.clcdpc.org/PAPIService/REST/" />
+		<add key="papi_request_hostname" value="https://catalog.clcohio.org/PAPIService/REST/" />
+		<!-- the active directory username and password to be used to make protected method calls -->
+		<add key="staff_username" value="username" />
+		<add key="staff_password" value="password" />
+		<add key="staff_domain" value="domain" />
+	  </appSettings>
 	
 #### Example Code
 	using Clc.Polaris.Api;

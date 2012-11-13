@@ -1,6 +1,6 @@
 # Polaris API Library for .NET
 
-The Polaris API library has been tested with Polaris 4.0 and Polaris 4.1, and requires .NET 3.5. Complete documentation for the Polarid API can be found on the [1][Polaris Developer's Network]
+The Polaris API library has been tested with Polaris 4.0 and Polaris 4.1, and requires .NET 3.5. Complete documentation for the Polaris API can be found on the [Polaris Developer's Network][1]
 
 ## Installation Via Nuget
 

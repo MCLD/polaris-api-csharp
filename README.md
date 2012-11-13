@@ -24,11 +24,11 @@ The Polaris API library has been tested with Polaris 4.0 and Polaris 4.1, and re
 	
 ### Example Code
 
-	```csharp
-	using Clc.Polaris.Api;
-	var polaris = new PolarisApiClient();
-	var patron = polaris.PatronBasicDataGet("11223344556677", "1234");
-	Console.WriteLine("Hello {0} {1}", patron.PatronBasicData.NameFirst, patron.PatronBasicData.NameLast);
-	```
-	
-	[1]: http://developer.polarislibrary.com/
+```csharp
+using Clc.Polaris.Api;
+var polaris = new PolarisApiClient();
+var patron = polaris.PatronBasicDataGet("11223344556677", "1234");
+Console.WriteLine("Hello {0} {1}", patron.PatronBasicData.NameFirst, patron.PatronBasicData.NameLast);
+```
+
+[1]: http://developer.polarislibrary.com/

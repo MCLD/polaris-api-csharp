@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polaris-api-csharp", "Polaris API Library\polaris-api-csharp.csproj", "{78E83504-5DBE-4ECA-A04D-F8911E436164}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polaris API Library", "Polaris API Library\Polaris API Library.csproj", "{78E83504-5DBE-4ECA-A04D-F8911E436164}"
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
@@ -9,7 +9,7 @@ Global
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://clcohio.tfspreview.com/defaultcollection
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = Polaris\u0020API\u0020Library\\polaris-api-csharp.csproj
+		SccProjectUniqueName1 = Polaris\u0020API\u0020Library\\Polaris\u0020API\u0020Library.csproj
 		SccProjectName1 = Polaris\u0020API\u0020Library
 		SccLocalPath1 = Polaris\u0020API\u0020Library
 	EndGlobalSection

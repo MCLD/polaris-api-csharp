@@ -40,7 +40,7 @@ namespace Clc.Polaris.Api
 		/// <param name="barcode">The patron's barcode.</param>
 		/// <returns>PatronValidateResult</returns>
 		/// <seealso cref="PatronValidateResult"/>
-		public PatronValidateResult PatronValidate(string barcode)
+		public PatronValidateResult staff_PatronValidate(string barcode)
 		{
 			var request = new RestRequest(string.Format("public/v1/1033/100/1/patron/{0}", barcode));
 			_client.Authenticator = new PolarisOverrideAuthenticator(ApiUser, ApiKey, token);

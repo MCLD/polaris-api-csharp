@@ -102,6 +102,7 @@ ClientBin
 *.dbmdl
 $tf
 *.sln.DotSettings
+Download/
 
 Generated_Code #added for RIA/Silverlight projects
 

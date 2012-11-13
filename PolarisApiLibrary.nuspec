@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+	<metadata>
+		<id>PolarisApiLibrary</id>
+		<version>1.0.8</version>
+		<authors>Central Library Consortium, Michael Fields</authors>
+		<owners>Central Library Consortium</owners>
+		<description>Polaris API helper library</description>
+		<language>en-US</language>
+		<projectUrl>http://github.com/clcdpc/polaris-api-csharp</projectUrl>
+		<licenseUrl>https://raw.github.com/clcdpc/polaris-api-csharp/master/LICENSE.txt</licenseUrl>
+		<tags>polaris polaris-api library clc</tags>		
+	</metadata>
+</package>

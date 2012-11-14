@@ -44,7 +44,7 @@ namespace Clc.Polaris.Api
 			_apiKey = apiKey;
 			_apiUser = apiUser;
 			_token = token;
-			_hashHostName = ConfigurationManager.AppSettings["PAPIHashHostName"];
+			_hashHostName = ConfigurationManager.AppSettings["papi_hash_hostname"];
 		}
 
 		#region IAuthenticator Members

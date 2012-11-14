@@ -2,7 +2,7 @@
 <package>
 	<metadata>
 		<id>PolarisApiLibrary</id>
-		<version>1.0.9</version>
+		<version>1.0.10</version>
 		<authors>Central Library Consortium, Michael Fields</authors>
 		<owners>Central Library Consortium</owners>
 		<description>Polaris API helper library</description>
@@ -10,5 +10,8 @@
 		<projectUrl>http://github.com/clcdpc/polaris-api-csharp</projectUrl>
 		<licenseUrl>https://raw.github.com/clcdpc/polaris-api-csharp/master/LICENSE.txt</licenseUrl>
 		<tags>polaris polaris-api library clc</tags>		
+		<dependencies>
+			<dependency id="RestSharp" />
+		</dependencies>
 	</metadata>
 </package>

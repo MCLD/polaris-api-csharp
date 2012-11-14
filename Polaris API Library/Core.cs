@@ -35,9 +35,9 @@ namespace Clc.Polaris.Api
 		/// </summary>
 		public PolarisApiClient()
 		{
-			ApiUser = ConfigurationManager.AppSettings["PAPIUser"];
-			ApiKey = ConfigurationManager.AppSettings["PAPIKey"];
-			RequestHostName = ConfigurationManager.AppSettings["PAPIRequestHostName"];
+			ApiUser = ConfigurationManager.AppSettings["papi_user"];
+			ApiKey = ConfigurationManager.AppSettings["papi_key"];
+			RequestHostName = ConfigurationManager.AppSettings["papi_request_hostname"];
 			StaffUsername = ConfigurationManager.AppSettings["staff_username"];
 			StaffPassword = ConfigurationManager.AppSettings["staff_password"];
 			StaffDomain = ConfigurationManager.AppSettings["staff_domain"];

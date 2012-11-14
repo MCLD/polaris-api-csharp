@@ -8,15 +8,16 @@ The Polaris API library has been tested with Polaris 4.0 and Polaris 4.1, and re
 	
 ## Sample Usage
 
-### Sample AppSettings
+### Sample AppSettings section of App.Config/Web.Config
 
       <appSettings>
 		<!-- The following keys are required in the config file of the base project using the library -->
 		<add key="papi_key" value="Your Polaris API Key" />
 		<add key="papi_user" value="Your Polaris API User" />
-		<add key="papi_hash_hostname" value="https://polprodpac.clcdpc.org/PAPIService/REST/" />
-		<add key="papi_request_hostname" value="https://catalog.clcohio.org/PAPIService/REST/" />
-		<!-- the active directory username and password to be used to make protected method calls -->
+		<add key="papi_hash_hostname" value="https://polprodpac.clcdpc.org/PAPIService/REST/" /> <!-- Internal PAC URL -->
+		<add key="papi_request_hostname" value="https://catalog.clcohio.org/PAPIService/REST/" /> <!-- External PAC URL -->
+		<!-- The active directory username and password to be used to make protected method calls -->
+		<!-- These values are only required if you wish to make protected method calls -->
 		<add key="staff_username" value="username" />
 		<add key="staff_password" value="password" />
 		<add key="staff_domain" value="domain" />

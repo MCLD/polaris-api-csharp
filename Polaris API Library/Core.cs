@@ -85,11 +85,14 @@ namespace Clc.Polaris.Api
 		{
 			var response = _client.Execute<T>(request);
 
-			if (response.Data.GetType().BaseType == typeof (PolarisApiResponse))
+			if (response.Data != null)
 			{
-				var data = response.Data as PolarisApiResponse;
-				data.RawResponse = response;
-				return (T) Convert.ChangeType(data, typeof (T));
+				if (response.Data.GetType().BaseType == typeof(PolarisApiResponse))
+				{
+					var data = response.Data as PolarisApiResponse;
+					data.RawResponse = response;
+					return (T)Convert.ChangeType(data, typeof(T));
+				}
 			}
 
 			return response.Data;

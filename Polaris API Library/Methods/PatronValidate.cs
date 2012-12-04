@@ -31,7 +31,18 @@ namespace Clc.Polaris.Api
 		{
 			var request = new RestRequest(string.Format("public/v1/1033/100/1/patron/{0}", barcode));
 			_client.Authenticator = new PolarisPublicAuthenticator(ApiUser, ApiKey, patronPIN);
-			return Execute<PatronValidateResult>(request);
+			var response = Execute<PatronValidateResult>(request);
+
+			if (response == null)
+			{
+				return new PatronValidateResult
+				{
+					Barcode = barcode,
+					ValidPatron = false
+				};
+			}
+
+			return response;
 		}
 
 		/// <summary>
@@ -44,7 +55,18 @@ namespace Clc.Polaris.Api
 		{
 			var request = new RestRequest(string.Format("public/v1/1033/100/1/patron/{0}", barcode));
 			_client.Authenticator = new PolarisOverrideAuthenticator(ApiUser, ApiKey, token);
-			return Execute<PatronValidateResult>(request);
+			var response = Execute<PatronValidateResult>(request);
+
+			if (response == null)
+			{
+				return new PatronValidateResult
+				{
+					Barcode = barcode,
+					ValidPatron = false
+				};
+			}
+
+			return response;
 		}
 	}
 }

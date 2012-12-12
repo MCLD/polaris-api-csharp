@@ -5,3 +5,4 @@ copy license.txt Download\
 
 tools\nuget.exe update -self
 tools\nuget.exe pack PolarisApiLibrary.nuspec -BasePath Download\Package -o Download
+pause

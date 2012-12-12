@@ -2,7 +2,7 @@
 <package>
 	<metadata>
 		<id>PolarisApiLibrary</id>
-		<version>1.0.12</version>
+		<version>1.0.13</version>
 		<authors>Central Library Consortium, Michael Fields</authors>
 		<owners>Central Library Consortium</owners>
 		<description>Polaris API helper library</description>

@@ -15,7 +15,7 @@
 // along with Polaris API Library. If not, see http://www.gnu.org/licenses.
 #endregion
 using RestSharp;
-using RestSharp.Contrib;
+using RestSharp.Extensions.MonoHttp;
 
 namespace Clc.Polaris.Api
 {

@@ -46,12 +46,16 @@ namespace Clc.Polaris.Api
 			var assemblyName = new AssemblyName(assembly.FullName);
 			var version = assemblyName.Version;
 
-			//PatronData p = new PatronData();
+            //PatronData p = new PatronData();
+
+            if(string.IsNullOrEmpty(RequestHostName)) {
+                throw new Exception("The papi_request_hostname AppSetting cannot be blank.");
+            }
 
 			_client = new RestClient
 				          {
 					          UserAgent = "clc-polaris-library/" + version, 
-							  BaseUrl = RequestHostName
+							  BaseUrl = new Uri(RequestHostName)
 				          };
 		}
 

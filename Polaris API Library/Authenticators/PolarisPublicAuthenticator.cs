@@ -19,6 +19,7 @@ using System.Configuration;
 using System.Security.Cryptography;
 using System.Text;
 using RestSharp;
+using RestSharp.Authenticators;
 
 namespace Clc.Polaris.Api
 {
